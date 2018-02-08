@@ -154,9 +154,9 @@ Gateways ditampilkan sebagai berlian.
 
 Can diverge or converge flows.
 
-In case of diverging it defines a single flow (path) that will be chosen according specified criteria. The first met condition determines the flow, next conditions are omitted. There is an ability to specify default flow. Default flow is chosen if there are no any met conditions. Default flow is marked with a slash sign.
+Dalam kasus divergen ini mendefinisikan aliran tunggal (path) yang akan dipilih sesuai kriteria yang ditentukan. Pertama bertemu menentukan kondisi aliran, di samping kondisi dihilangkan. Ada kemampuan untuk menentukan default aliran. Default aliran ini dipilih jika tidak ada terpenuhi kondisi. Default aliran ditandai dengan tanda slash.
 
-In case of converging it just directs the flow to the outgoing element. It doesn't get blocked after the flow come though, so parallel flows won't be merged into the single flow.
+Dalam kasus konvergen itu hanya mengarahkan aliran keluar elemen. Itu tidak bisa diblokir setelah aliran datang, jadi arus sejajar tidak akan bergabung ke dalam aliran tunggal.
 
 #### cara Gate Eksklusif
 
@@ -190,7 +190,7 @@ Jika ada kebutuhan untuk menggabungkan arus paralel yang dihasilkan oleh gateway
 
 Note: Diverging and converging gateways must be balanced.
 
-Note: If one of parallel flows has been ended for some reason then diverging gateway will never be processed. The process will be blocked. Avoid a flowchart design that can bring about such a situation.
+Catatan: Jika salah satu dari aliran paralel telah berakhir untuk beberapa alasan maka divergen gateway tidak akan diproses. Proses yang akan diblokir. Menghindari flowchart desain yang dapat membawa situasi seperti ini.
 
 Catatan: Diverging dan konvergen cara gerbang harus seimbang.
 
@@ -216,7 +216,7 @@ Jika terjadi konvergen, menunggu sampai semua arus masuk masuk dan kemudian berl
 
 Note: Diverging and converging gateways must be balanced.
 
-Note: If one of parallel flows has been ended for some reason then diverging gateway will never be processed. The process will be blocked. Avoid a flowchart design that can bring about such a situation.
+Catatan: Jika salah satu dari aliran paralel telah berakhir untuk beberapa alasan maka divergen gateway tidak akan diproses. Proses yang akan diblokir. Menghindari flowchart desain yang dapat membawa situasi seperti ini.
 
 Catatan: Diverging dan konvergen cara gerbang harus seimbang.
 
@@ -296,11 +296,11 @@ Mengirim pesan email ke penerima tertentu.
 
 #### User Task
 
-Provides a flexible ability of user interaction. It stops execution until the user (specified explicitly or by assignment rule) resolves the task. Process User Task record will be created in the system. By default there are three action types: Approve, Review, Accomplish.
+Menyediakan fleksibel kemampuan interaksi pengguna. Berhenti eksekusi sampai pengguna (yang ditentukan secara eksplisit atau dengan penetapan aturan) menyelesaikan tugas. Proses Pengguna catatan Tugas yang akan dibuat dalam sistem. Secara default ada tiga jenis tindakan: Menyetujui, Review, Mencapai.
 
-* Approve type requires the user to chose between 'Approved' and 'Declined'.
-* Review type gives only one option: 'Reviewed'.
-* Accomplish type has two options: 'Completed' and 'Failed'.
+* Menyetujui jenis mengharuskan pengguna untuk memilih antara 'Disetujui' dan 'Menurun'.
+* Review tipe hanya memberikan satu opsi: 'Review'.
+* Mencapai jenis memiliki dua pilihan: 'Selesai' dan 'Gagal'.
 
 
 The user assigned to the created Process User Task record will receive in-app notification. Administrator can also enable email notifications.
@@ -346,14 +346,14 @@ Diwakili sebagai panah padat. Menunjukkan urutan elemen proses yang akan dijalan
 
 ## Conditions
 
-Conditional events, exclusive and inclusive diverging gateways have conditions that determine the flow of the process.
+Bersyarat peristiwa, eksklusif dan inklusif divergen gateway memiliki kondisi yang menentukan aliran proses.
 
-Through UI there is an ability to check conditions for the following records:
+Melalui UI ada kemampuan untuk memeriksa kondisi untuk catatan berikut:
 
-* Target record;
-* Records related to the target through many-to-one and children-to-parent relationships;
-* Records created by the process via tasks;
-* User task records, which allows checking the resolution.
+* Target rekam;
+* Catatan terkait dengan target melalui banyak-ke-satu dan anak-anak-untuk-orangtua hubungan;
+* Catatan yang dibuat oleh proses melalui tugas-tugas;
+* Pengguna tugas catatan, yang memungkinkan memeriksa resolusi.
 
 It's also possible to define conditions in [Espo-formula](formula.md) language.
 
